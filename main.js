@@ -12,8 +12,9 @@ var km, numeroKM, eta, prezzo;
 km=0.21;
 
 // chiedo all'utente di inserire il numero di km che vuole percorrere e la sua età
-numeroKM = prompt('Inserisci il numero di km che vuoi percorrere');
-eta = prompt('inserisci la tua età');
+//siccome l'utente inserirà una stringa, la converto in un intero grazie a parseInt
+numeroKM = parseInt(prompt('Inserisci il numero di km che vuoi percorrere'));
+eta = parseInt(prompt('inserisci la tua età'));
 
 // inserisco le condizioni per il calcolo corretto del prezzo dei biglietti
 if (eta<18){
